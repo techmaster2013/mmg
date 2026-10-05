@@ -43,6 +43,17 @@
       </select>
     </div>
 
+    <div class="option">
+      <label for="round-time">time</label>
+      <select id="round-time">
+        <option value="30">30 sec</option>
+        <option value="60" selected>1 min</option>
+        <option value="120">2 min</option>
+        <option value="300">5 min</option>
+        <option value="0">unlimited</option>
+      </select>
+    </div>
+
     <hr>
 
     <button id="singleplayer" title="guess u got no friends..">singleplayer</button>
@@ -61,6 +72,8 @@
       <span id="game-status"></span>
       <span id="coordinates">x: 0 · y: 0</span>
       <span id="mode-status"></span>
+      <span id="round-timer"></span>
+      <span id="score-status"></span>
     </div>
 
     <div id="game-buttons">
