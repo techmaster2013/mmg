@@ -32,6 +32,8 @@
         <option value="free-roam">free roam</option>
         <option value="tag">tag</option>
         <option value="survival">survival</option>
+        <option value="tag-survival">tag x survival</option>
+        <option value="pvp">pvp</option>
         <option value="hot-potato">hot potato</option>
         <option value="meteor-shower">meteor shower</option>
         <option value="infection">infection</option>
@@ -65,6 +67,12 @@
       <button id="start-round" class="hidden">start</button>
       <button id="leave-game">leave</button>
     </div>
+  </div>
+
+  <div id="pvp-hud" class="hidden">
+    <div id="pvp-health">hp: 100</div>
+    <div id="charge-track"><div id="charge-green"></div><div id="charge-marker"></div></div>
+    <div id="charge-label">hold space to charge</div>
   </div>
 
   <div id="chat" class="hidden">
