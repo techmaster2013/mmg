@@ -18,14 +18,7 @@
 
     <div class="option">
       <label for="player-name">username</label>
-
-      <input
-        id="player-name"
-        type="text"
-        maxlength="16"
-        placeholder="we luv cubey!"
-        autocomplete="off"
-      >
+      <input id="player-name" type="text" maxlength="16" placeholder="we luv cubey!" autocomplete="off">
     </div>
 
     <div class="option">
@@ -35,41 +28,27 @@
 
     <div class="option">
       <label for="gamemode">gamemode</label>
-
       <select id="gamemode">
         <option value="free-roam">free roam</option>
         <option value="tag">tag</option>
         <option value="survival">survival</option>
+        <option value="tag">hot potato</option>
+        <option value="survival">meteor shower</option>
       </select>
     </div>
 
     <hr>
 
-    <button id="singleplayer" title="guess u got no friends..">
-      singleplayer
-    </button>
-
-    <button id="create-room">
-      create room
-    </button>
+    <button id="singleplayer" title="guess u got no friends..">singleplayer</button>
+    <button id="create-room">create room</button>
 
     <div id="join-section">
-      <input
-        id="room-code"
-        type="text"
-        maxlength="4"
-        placeholder="enter room code"
-        autocomplete="off"
-      >
-
-      <button id="join-room">
-        join
-      </button>
+      <input id="room-code" type="text" maxlength="4" placeholder="enter room code" autocomplete="off">
+      <button id="join-room">join</button>
     </div>
 
     <p id="menu-status"></p>
   </div>
-
 
   <div id="game-ui" class="hidden">
     <div id="game-info">
@@ -79,66 +58,49 @@
     </div>
 
     <div id="game-buttons">
-      <button id="start-round" class="hidden">
-        start
-      </button>
-
-      <button id="leave-game">
-        leave
-      </button>
+      <button id="start-round" class="hidden">start</button>
+      <button id="leave-game">leave</button>
     </div>
   </div>
 
+  <div id="chat" class="hidden">
+    <div id="chat-log"></div>
+    <form id="chat-form">
+      <input id="chat-input" maxlength="240" autocomplete="off" placeholder="say something dumb">
+      <button>send</button>
+    </form>
+  </div>
 
   <div id="countdown" class="hidden"></div>
-
 
   <div id="pause-menu" class="overlay hidden">
     <div class="overlay-box">
       <h2>paused</h2>
-
-      <button id="resume-game">
-        resume
-      </button>
-
-      <button id="pause-exit">
-        exit
-      </button>
+      <button id="resume-game">resume</button>
+      <button id="pause-exit">exit</button>
     </div>
   </div>
-
 
   <div id="exit-menu" class="overlay hidden">
     <div class="overlay-box">
       <h2 id="exit-message">abandoning cubey? :(</h2>
-
-      <button id="confirm-exit">
-        exit
-      </button>
-
-      <button id="cancel-exit">
-        nvm
-      </button>
+      <button id="confirm-exit">exit</button>
+      <button id="cancel-exit">nvm</button>
     </div>
   </div>
-
 
   <div id="death-menu" class="overlay hidden">
     <div class="overlay-box">
       <h2>cubey died 💀</h2>
-
       <p id="death-status">waiting for the round...</p>
-
-      <button id="death-exit">
-        exit
-      </button>
+      <button id="death-exit">exit</button>
     </div>
   </div>
-
 
   <canvas id="game"></canvas>
 
   <script type="module" src="game.js"></script>
+  <script type="module" src="chat.js"></script>
 
 </body>
 </html>
